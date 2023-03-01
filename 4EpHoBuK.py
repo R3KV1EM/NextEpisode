@@ -60,7 +60,7 @@ def get_text_messages(message):
 
         # Send a photo of the entrance for this shop
 
-        with open('/home/archy/Документы/bot source/pochtaentr.png', 'rb') as photo:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/pochtaentr.png', 'rb') as photo:
 
             bot.send_photo(message.from_user.id, photo)
 
@@ -73,7 +73,7 @@ def get_text_messages(message):
 
         # Send a photo of the entrance for this shop
 
-        with open('/home/archy/Документы/bot source/cleverentr.png', 'rb') as photo:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/cleverentr.png', 'rb') as photo:
 
             bot.send_photo(message.from_user.id, photo)
 
@@ -86,7 +86,7 @@ def get_text_messages(message):
 
         # Send a photo of the entrance for this shop
 
-        with open('/home/archy/Документы/bot source/dz entr.png', 'rb') as photo:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/dz entr.png', 'rb') as photo:
 
             bot.send_photo(message.from_user.id, photo)
 
@@ -95,6 +95,9 @@ def get_text_messages(message):
 
     elif message.text == '💨 ТОП 5 Одноразок':
         bot.send_message(message.from_user.id, '1 место: 💘Lost Mary - 5000 puffs \n2 место: 💝Lost Mary - 4000 puffs\n3 место: 💖HQD - 1200 puffs \n4 место: 💗Elf Bar - 4000 puffs \n5 место: 💓Lost Mary & Elf Bar - 1500 puffs', parse_mode='Markdown')
+        with open('/home/archy/Desktop/Kode/stuff/bot source/odnorazki.png', 'rb') as photo:
+
+            bot.send_photo(message.from_user.id, photo)
 
     elif message.text == '💥Новинки':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -112,51 +115,51 @@ def get_text_messages(message):
     elif message.text == '🌬️Одноразки':
         bot.send_message(message.from_user.id, '🤯 Husky 8000 puffs HARD - От производителей самой популярной '
                                                'жидкости в России')
-        with open('/home/archy/Документы/bot source/husky8000.png', 'rb') as photo:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/husky8000.png', 'rb') as photo:
 
             bot.send_photo(message.from_user.id, photo)
 
         bot.send_message(message.from_user.id, "😋GTM Bar 4200 и 5000 20mg - Mesh испаритель 1.2 Ohm, огромное кол-во "
                                                "вкусов")
-        with open('/home/archy/Документы/bot source/GTQ.png', 'rb') as foto:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/GTQ.png', 'rb') as foto:
 
             bot.send_photo(message.from_user.id, foto)
 
     elif message.text == '🧴Жидкости':
         bot.send_message(message.from_user.id, '👽Soak 30мл 20мг - Фирменные вкусы от знаменитых производителей '
                                                'одноразок ')
-        with open('/home/archy/Документы/bot source/soak.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/soak.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
         bot.send_message(message.from_user.id, '🤠Rell Yellow 60мл 6мг(органика) 70/30 - Большая палитра вкусов для '
                                                '"Больших" устройств ')
 
-        with open('/home/archy/Документы/bot source/rell.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/rell.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
         bot.send_message(message.from_user.id, '🙀Serial Chiller - Прохладная линейка на каждый день от маэcтро '
                                                'жижеварения, команды Candy Lab ')
 
-        with open('/home/archy/Документы/bot source/serialchiller.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/serialchiller.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
     elif message.text == '🧨Устройства':
         bot.send_message(message.from_user.id, '⭐Xros 3 \nАккумулятор - 1000mAh \nType-C \nКартридж 2мл \nКартриджи '
                                                '0.6 и 1 Ohm в комплекте')
-        with open('/home/archy/Документы/bot source/xros3.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/xros3.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
         bot.send_message(message.from_user.id, '⭐Xros 3 mini \nАккумулятор - 1000mAh \nType-C \nКартридж 2мл \nКартриджи '
                                                '0.6 в комплекте')
-        with open('/home/archy/Документы/bot source/xros3mini.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/xros3mini.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
         bot.send_message(message.from_user.id,
                          '⭐Pasito mini \nАккумулятор - 1100mAh \nType-C \nКартридж 3.5мл \nИспарители '
                          '0.6 и 1 Ohm в комплекте')
-        with open('/home/archy/Документы/bot source/pasitomini.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/pasitomini.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
     elif message.text == '🧂Навигатор salt жидкостей':
@@ -181,7 +184,7 @@ def get_text_messages(message):
                                                "🐺Husky White - Mint Wind \n8) 🌲Boshki - Добрые On Ice \n9) 🧸Мишка - "
                                                "Холодный ананас \n10) 🧃Serial Chiller - Сок с гранатом")
 
-        with open('/home/archy/Документы/bot source/coldfruits.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/coldfruits.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
@@ -192,7 +195,7 @@ def get_text_messages(message):
                                                "- Blueberry\n6) ☕CoffeIN - Hot Chocolate \n7) "
                                                "🍩Rell Green - Пончик с клубникой \n8) 🪱Slurm - Cherry Worms \n9) 🧸Мишка - "
                                                "Булочка с корицей \n10) 🍪ElectroJam - Milk chocolate cookie")
-        with open('/home/archy/Документы/bot source/dessert.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/dessert.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
@@ -207,7 +210,7 @@ def get_text_messages(message):
                                                "Клубника, гранат \n9) 🍹Rell Green  -"
                                                "Киви, маракуйя, гуава \n10) 🍍Genetic Code - Ананас, клюква")
 
-        with open('/home/archy/Документы/bot source/fruits.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/fruits.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
@@ -228,7 +231,7 @@ def get_text_messages(message):
                          "Ледяная кола (Winter River) \n9) 🫙Maxwell's  -"
                          "Травянистая Cоветская кока-кола (Baikal) \n10) 🌵Raisin - Кактусовый Лимонад (Phobia)")
 
-        with open('/home/archy/Документы/bot source/lemonade.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/lemonade.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
@@ -246,7 +249,7 @@ def get_text_messages(message):
                    "Добрые On Ice"]
         result = random.choice(liquids)
         bot.send_message(message.from_user.id, result)
-        with open('/home/archy/Документы/bot source/randompepe.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/randompepe.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
@@ -282,7 +285,7 @@ def get_text_messages(message):
                                                "зависимости от типа устройства и его нагревателей (картриджей, "
                                                "испарителей) но основа именно такая")
 
-        with open('/home/archy/Документы/bot source/pgvg.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/pgvg.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
 
@@ -304,7 +307,7 @@ def get_text_messages(message):
                                                "процессе парения \n\n2)Солевой никотин больше предназначен для"
                                                "быстрого получения никотинового эффекта и коротких перекуров ~3-5 "
                                                "мин. крепость никотина ощущается гораздо мягче в сравнении с щелочью")
-        with open('/home/archy/Документы/bot source/nictonie.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/nictonie.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
     elif message.text == "ΩСопротивление":
@@ -316,7 +319,7 @@ def get_text_messages(message):
                                                "генерирует больше пара. \n\nИспаритель на 1 Ohm - имеет более тугую "
                                                "затяжку, предназначен для меньшей мощности, генерирует меньше пара "
                                                "чем испаритель на 0.5 Ohm \n\nЗаключение: Чем НИЖЕ сопротивление, тем больше пара, вкуса и более свободная затяжка. Соответственно чем ВЫШЕ сопротивление, тем меньше мощности необходимо, меньше пара, затяжка более тугая.")
-        with open('/home/archy/Документы/bot source/resistance.png', 'rb') as fotq:
+        with open('/home/archy/Desktop/Kode/stuff/bot source/resistance.png', 'rb') as fotq:
 
             bot.send_photo(message.from_user.id, fotq)
     elif message.text == "🔋Советы по зарядке":
@@ -325,5 +328,20 @@ def get_text_messages(message):
                                                "заряда, устройство начинает нагреваться(особенно если ток более 1А) "
                                                "тепло от устройства передается на картридж и делает жидкость менее "
                                                "густой что может стать причиной протечек.")
+        with open('/home/archy/Desktop/Kode/stuff/bot source/charging.png', 'rb') as photo:
+            bot.send_photo(message.from_user.id, photo)
+
+
+    elif message.text == "💡Продление жизни испарителю/картриджу":
+        bot.send_message(message.from_user.id, "1) Перед использованием нового картриджа/испарителя нужно заправить "
+                                               "бак и подождать ~15мин. до полной пропитки \n2) Не использовать "
+                                               "устройство на холоде (при воздействии отрицательных температур "
+                                               "жидкость густет и начинает плохо пропитывать нагревательный элемент "
+                                               "\n3) Заправлять подходящую по густоте жидкость(PG/VG) \n4) Не "
+                                               "смешивать жидкости в картридже (1 Картридж - 1 Жидкость) \n5) "
+                                               "Десертные вкусы как правило быстрее портят картридж чем нейтральные "
+                                               "фрукты или ягоды")
+        with open('/home/archy/Desktop/Kode/stuff/bot source/cartridge.png', 'rb') as photo:
+            bot.send_photo(message.from_user.id, photo)
 
 bot.polling(none_stop=True, interval=0)
