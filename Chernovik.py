@@ -345,3 +345,4 @@ def get_text_messages(message):
             bot.send_photo(message.from_user.id, photo)
 
 bot.polling(none_stop=True, interval=0)
+z
