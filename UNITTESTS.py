@@ -33,3 +33,4 @@ class TestMain(unittest.TestCase):
         testparam = (1, 2, 3, 4)
         result = UNITTESTSMAIN.do_stuff(testparam)
         self.assertEqual(result, 'Please enter number')
+pass
