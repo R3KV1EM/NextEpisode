@@ -4,6 +4,8 @@ import UNITTESTSMAIN
 
 
 class TestMain(unittest.TestCase):
+    def setUp(self):
+        print("This is a test for Func")
     def test_do_stuff(self):
         testparam = 10
         result = UNITTESTSMAIN.do_stuff(testparam)
@@ -33,4 +35,5 @@ class TestMain(unittest.TestCase):
         testparam = (1, 2, 3, 4)
         result = UNITTESTSMAIN.do_stuff(testparam)
         self.assertEqual(result, 'Please enter number')
-pass
+    def tearDown(self):
+        print("cleaning up")
